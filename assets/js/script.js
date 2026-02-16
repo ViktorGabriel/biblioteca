@@ -1,4 +1,6 @@
-const livros = [
+const livrosSalvos = localStorage.getItem('minhaBiblioteca');
+
+const livros = livrosSalvos ? JSON.parse(livrosSalvos) :[
     {
         titulo: "Ninguém pode me ferir",
         autor: "David Goggins",
@@ -32,6 +34,10 @@ const livros = [
 ];
 
 const container = document.getElementById('estante-container');
+
+function salvarDados() {
+    localStorage.setItem('minhaBiblioteca', JSON.stringify(livros));
+}
 
 function renderizarLivros() {
     container.innerHTML = '';
@@ -67,44 +73,31 @@ function renderizarLivros() {
     });
 }
 
-function alternarStatus(index) {
-    livros[index].lido = !livros[index].lido;
-   
-    renderizarLivros();
-}
-
-renderizarLivros();
-
 function adicionarNovoLivro() {
-   
-    const tituloInput = document.getElementById('input-titulo').value;
-    const autorInput = document.getElementById('input-autor').value;
-    const capaInput = document.getElementById('input-capa').value;
+    const tituloInput = document.getElementById('input-titulo');
+    const autorInput = document.getElementById('input-autor');
+    const capaInput = document.getElementById('input-capa');
 
-    
-    if (tituloInput === "" || autorInput === "" || capaInput === "") {
+    if (tituloInput.value === "" || autorInput.value === "" || capaInput.value === "") {
         alert("Por favor, preencha todos os campos!");
-        return; 
+        return;
     }
 
-    
     const novoLivro = {
-        titulo: tituloInput,
-        autor: autorInput,
-        capa: capaInput,
-        lido: false 
+        titulo: tituloInput.value,
+        autor: autorInput.value,
+        capa: capaInput.value,
+        lido: false
     };
 
-    
     livros.push(novoLivro);
-
     
+    salvarDados(); 
     renderizarLivros();
 
-   
-    document.getElementById('input-titulo').value = '';
-    document.getElementById('input-autor').value = '';
-    document.getElementById('input-capa').value = '';
+    tituloInput.value = '';
+    autorInput.value = '';
+    capaInput.value = '';
 }
 
 function removerLivro(index) {
@@ -112,8 +105,17 @@ function removerLivro(index) {
 
     if (confirmar) {
         livros.splice(index, 1);
-
         
+        salvarDados();
         renderizarLivros();
     }
 }
+
+function alternarStatus(index) {
+    livros[index].lido = !livros[index].lido;
+    
+    salvarDados();
+    renderizarLivros();
+}
+
+renderizarLivros();
