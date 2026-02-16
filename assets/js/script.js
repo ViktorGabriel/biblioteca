@@ -34,7 +34,7 @@ const livros = [
 const container = document.getElementById('estante-container');
 
 function renderizarLivros() {
-    container.innerHTML = ''; 
+    container.innerHTML = '';
 
     livros.forEach((livro, index) => {
         const classeBotao = livro.lido ? 'botao-lido' : 'botao-nao-lido';
@@ -43,6 +43,11 @@ function renderizarLivros() {
         const cartao = `
             <article class="infomacoes-da-capa">
                 <img src="${livro.capa}" alt="${livro.titulo}" class="capa-do-livro">
+                
+                <button class="botao-remover" onclick="removerLivro(${index})" title="Remover livro">
+                    🗑️
+                </button>
+
                 <div class="infomacoes-do-livro">
                     <div>
                         <h3 class="titulo-do-livro">${livro.titulo}</h3>
@@ -100,4 +105,15 @@ function adicionarNovoLivro() {
     document.getElementById('input-titulo').value = '';
     document.getElementById('input-autor').value = '';
     document.getElementById('input-capa').value = '';
+}
+
+function removerLivro(index) {
+    const confirmar = confirm(`Tem certeza que deseja remover "${livros[index].titulo}"?`);
+
+    if (confirmar) {
+        livros.splice(index, 1);
+
+        
+        renderizarLivros();
+    }
 }

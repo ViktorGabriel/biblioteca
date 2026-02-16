@@ -37,6 +37,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .capa-do-livro {
@@ -94,7 +95,6 @@ button {
     display: grid;
 }
 
-/* Adicionando um novo livro */
 
 #formulario-livro {
     background-color: white;
@@ -109,6 +109,17 @@ button {
 #formulario-livro h2 {
     margin-bottom: 15px;
     color: #333;
+}
+
+#formulario-livro button {
+    background-color: #3498db;
+    color: white;
+    flex: 0 0 auto;
+    padding: 10px 20px;
+}
+
+#formulario-livro button:hover {
+    background-color: #2980b9;
 }
 
 .inputs-container {
@@ -126,13 +137,28 @@ input {
     min-width: 150px;
 }
 
-#formulario-livro button {
-    background-color: #3498db;
-    color: white;
-    flex: 0 0 auto;
-    padding: 10px 20px;
+.botao-remover {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #ddd;
+    color: #e74c3c;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0; 
+    transition: all 0.2s;
+    z-index: 10;
 }
 
-#formulario-livro button:hover {
-    background-color: #2980b9;
+.botao-remover:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.1);
 }
