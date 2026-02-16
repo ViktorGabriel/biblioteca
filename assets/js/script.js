@@ -22,6 +22,12 @@ const livros = [
         autor:"Greg McKeown" ,
         capa: "https://m.media-amazon.com/images/I/71HuZRl-XeL.jpg",
         lido: false
+    },
+    {
+        titulo:"Entendendo algoritmos",
+        autor:"Aditya Y. Bhargava",
+        capa:"https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY425_.jpg",
+        lido: false
     }
 ];
 
@@ -63,3 +69,35 @@ function alternarStatus(index) {
 }
 
 renderizarLivros();
+
+function adicionarNovoLivro() {
+   
+    const tituloInput = document.getElementById('input-titulo').value;
+    const autorInput = document.getElementById('input-autor').value;
+    const capaInput = document.getElementById('input-capa').value;
+
+    
+    if (tituloInput === "" || autorInput === "" || capaInput === "") {
+        alert("Por favor, preencha todos os campos!");
+        return; 
+    }
+
+    
+    const novoLivro = {
+        titulo: tituloInput,
+        autor: autorInput,
+        capa: capaInput,
+        lido: false 
+    };
+
+    
+    livros.push(novoLivro);
+
+    
+    renderizarLivros();
+
+   
+    document.getElementById('input-titulo').value = '';
+    document.getElementById('input-autor').value = '';
+    document.getElementById('input-capa').value = '';
+}

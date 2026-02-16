@@ -18,17 +18,16 @@ body {
     color: #333;
 }
 
-/* A ESTANTE (Grid) */
+
 #estante-container {
     display: grid;
-    /* Isso faz os livros ficarem lado a lado e descerem se faltar espaço */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* O CARTÃO DO LIVRO */
+
 .infomacoes-da-capa {
     background: white;
     padding: 15px;
@@ -45,11 +44,11 @@ body {
     height: 220px;
     object-fit: cover;
     margin-bottom: 15px;
-    background-color: #ddd; /* Cor de fundo caso a imagem falhe */
+    background-color: #ddd; 
     border-radius: 5px;
 }
 
-.titulo-do-livro { /* Corrigido de 'titudo' */
+.titulo-do-livro { 
     font-size: 1.2rem;
     margin-bottom: 5px;
     color: #222;
@@ -61,7 +60,7 @@ body {
     font-style: italic;
 }
 
-/* BOTÕES */
+
 .botoes-container {
     display: flex;
     gap: 10px;
@@ -90,3 +89,50 @@ button {
     color: white;
 }
 .botao-nao-lido:hover { background-color: #c0392b; }
+
+#adicionar-livro {
+    display: grid;
+}
+
+/* Adicionando um novo livro */
+
+#formulario-livro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 40px auto; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+#formulario-livro h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.inputs-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 150px;
+}
+
+#formulario-livro button {
+    background-color: #3498db;
+    color: white;
+    flex: 0 0 auto;
+    padding: 10px 20px;
+}
+
+#formulario-livro button:hover {
+    background-color: #2980b9;
+}
