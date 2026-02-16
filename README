@@ -1,0 +1,48 @@
+# 📚 Minha Biblioteca Pessoal
+
+Um gerenciador de livros simples e interativo desenvolvido com tecnologias web fundamentais. Este projeto permite organizar leituras, acompanhar o progresso e manter uma estante virtual personalizada.
+
+![Status do Projeto](https://img.shields.io/badge/Status-Concluído-green)
+
+## 📸 Preview
+
+![alt text](image.png)
+
+## 🚀 Funcionalidades
+
+- **Adicionar Livros:** Interface para inserir Título, Autor e URL da capa do livro.
+- **Listagem Dinâmica:** Os livros são exibidos em uma grade (Grid Layout) que se adapta a diferentes tamanhos de tela.
+- **Status de Leitura:** Botão interativo para alternar entre "Lido ✅" e "Não Lido ❌".
+- **Remoção de Itens:** Possibilidade de excluir livros da estante com confirmação de segurança.
+- **Persistência de Dados:** Uso do **LocalStorage** para que os livros salvos não desapareçam ao fechar ou recarregar a página.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5:** Estrutura semântica (`<main>`, `<article>`, `<header>`).
+- **CSS3:** Estilização moderna com foco em **Flexbox** e **CSS Grid** para responsividade.
+- **JavaScript (ES6+):**
+
+🔧 Como Rodar o Projeto
+Faça o download ou clone este repositório.
+
+Navegue até a pasta do projeto.
+
+Abra o arquivo index.html em qualquer navegador moderno (Chrome, Firefox, Edge).
+
+Pronto! A aplicação rodará localmente, sem necessidade de servidores ou instalações complexas.
+
+🧠 Aprendizados
+Este projeto foi desenvolvido para praticar conceitos essenciais de desenvolvimento Front-end, incluindo:
+
+Como manipular elementos HTML via JavaScript.
+
+A importância da persistência de dados no navegador (LocalStorage).
+
+Design responsivo sem a necessidade de frameworks externos (Bootstrap/Tailwind).
+
+Organização de código e separação de responsabilidades (HTML vs CSS vs JS).
+
+📝 Licença
+Este projeto é de uso livre para fins de estudo. Sinta-se à vontade para forkear e melhorar!
+
+Desenvolvido por Viktor Gabriel Gonçalves de Oliveira
