@@ -1,48 +1,46 @@
-# 📚 Minha Biblioteca Pessoal
+# 📚 Minha Biblioteca Pessoal v2.0
 
-Um gerenciador de livros simples e interativo desenvolvido com tecnologias web fundamentais. Este projeto permite organizar leituras, acompanhar o progresso e manter uma estante virtual personalizada.
+Um gerenciador de livros e estante virtual moderna, interativa e segura desenvolvida com tecnologias web fundamentais (HTML5, Vanilla CSS3 e Vanilla JavaScript ES6+).
 
-![Status do Projeto](https://img.shields.io/badge/Status-Concluido-green)
+![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
+![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20ES6+-blue)
+![Acessibilidade](https://img.shields.io/badge/Acessibilidade-WCAG%202.1%20AA-success)
+![Segurança](https://img.shields.io/badge/Seguran%C3%A7a-Protegido%20contra%20XSS-purple)
 
-## 📸 Preview
+---
 
-![alt text](./assets/github%20imgs/image.png)
+## 🚀 Funcionalidades Principais
 
-## 🚀 Funcionalidades
+- 📖 **Gerenciamento de Livros (CRUD):** Adicione, alterne o status de leitura ("Lido ✅" / "Não Lido 📖") e remova livros com segurança.
+- 🌓 **Modo Escuro / Claro (Dark & Light Theme):** Alternância instantânea com suporte a `prefers-color-scheme` e persistência no navegador.
+- 🔍 **Busca em Tempo Real:** Filtro dinâmico por título ou autor com debounce para alto desempenho.
+- 🏷️ **Filtros por Status:** Visualização rápida de "Todos", "Lidos" e "Não Lidos" com contagem em tempo real.
+- 🛡️ **Segurança e Prevenção XSS:** Renderização segura de nós DOM com `DocumentFragment` e sanitização de dados.
+- 🖼️ **Fallback para Imagens:** Caso o link da capa esteja quebrado ou ausente, uma capa estilizada personalizada é gerada automaticamente.
+- 🍞 **Toasts de Notificação:** Notificações não-bloqueantes para ações do usuário (adicionar, remover, alterar status).
+- 🗑️ **Modal Acessível de Confirmação:** Substituição de `confirm()` por um diálogo `<dialog>` customizado e acessível por teclado.
+- 💾 **Persistência Confiável:** Armazenamento em `LocalStorage` com tratamento de exceções (`try/catch`).
+- 📱 **Design 100% Responsivo:** Grid fluido e micro-interações elegantes.
 
-- **Adicionar Livros:** Interface para inserir Título, Autor e URL da capa do livro.
-- **Listagem Dinâmica:** Os livros são exibidos em uma grade (Grid Layout) que se adapta a diferentes tamanhos de tela.
-- **Status de Leitura:** Botão interativo para alternar entre "Lido ✅" e "Não Lido ❌".
-- **Remoção de Itens:** Possibilidade de excluir livros da estante com confirmação de segurança.
-- **Persistência de Dados:** Uso do **LocalStorage** para que os livros salvos não desapareçam ao fechar ou recarregar a página.
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5:** Estrutura semântica (`<main>`, `<article>`, `<header>`).
-- **CSS3:** Estilização moderna com foco em **Flexbox** e **CSS Grid** para responsividade.
-- **JavaScript (ES6+):**
+- **HTML5 Semântico:** `<header>`, `<main>`, `<section>`, `<article>`, `<dialog>`.
+- **Vanilla CSS3 Moderno:** CSS Custom Properties (variáveis), Flexbox, CSS Grid, Glassmorphism, Micro-interações e tema Dark/Light.
+- **JavaScript (ES6+):** Clean Architecture, State Management, Event Delegation, DOM API segura.
 
-🔧 Como Rodar o Projeto
-Faça o download ou clone este repositório.
+---
 
-Navegue até a pasta do projeto.
+## 🔧 Como Rodar o Projeto
 
-Abra o arquivo index.html em qualquer navegador moderno (Chrome, Firefox, Edge).
+1. Clone ou baixe este repositório.
+2. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Não requer instalação de dependências ou servidores externos!
 
-Pronto! A aplicação rodará localmente, sem necessidade de servidores ou instalações complexas.
+---
 
-🧠 Aprendizados
-Este projeto foi desenvolvido para praticar conceitos essenciais de desenvolvimento Front-end, incluindo:
+## 📝 Licença
+Este projeto é de uso livre para fins de estudo e prática.
 
-Como manipular elementos HTML via JavaScript.
-
-A importância da persistência de dados no navegador (LocalStorage).
-
-Design responsivo sem a necessidade de frameworks externos (Bootstrap/Tailwind).
-
-Organização de código e separação de responsabilidades (HTML vs CSS vs JS).
-
-📝 Licença
-Este projeto é de uso livre para fins de estudo. Sinta-se à vontade para forkear e melhorar!
-
-Desenvolvido por Viktor Gabriel Gonçalves de Oliveira
+Desenvolvido com 💜 por **Viktor Gabriel**
