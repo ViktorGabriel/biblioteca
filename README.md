@@ -77,8 +77,7 @@ biblioteca/
 │   └── js/
 │       └── script.js          # Lógica, State Management e Event Delegation
 ├── index.html                 # Página principal acessível
-├── README.md                  # Documentação oficial do projeto
-└── SKILLS-A-INSTALAR.MD       # Diagnóstico técnico e guia de skills
+└── README.md                  # Documentação oficial do projeto
 ```
 
 ---
