@@ -16,7 +16,7 @@
 // --------------------------------------------------------------------------
 // 1. Constantes & Dados Iniciais Padrão
 // --------------------------------------------------------------------------
-const STORAGE_KEY_BOOKS = 'minhaBiblioteca_v2';
+const STORAGE_KEY_BOOKS = 'minhaBiblioteca_v3';
 const STORAGE_KEY_THEME = 'minhaBiblioteca_theme';
 
 const LIVROS_PADRAO = [
@@ -59,6 +59,206 @@ const LIVROS_PADRAO = [
         capa: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY425_.jpg',
         lido: false,
         criadoEm: 1700000004000
+    },
+    {
+        id: 'book-6',
+        titulo: 'Meditações',
+        autor: 'Marco Aurélio',
+        capa: 'https://covers.openlibrary.org/b/id/13202688-L.jpg',
+        lido: true,
+        criadoEm: 1700000005000
+    },
+    {
+        id: 'book-7',
+        titulo: 'Manifesto Comunista',
+        autor: 'Karl Marx e Friedrich Engels',
+        capa: 'https://covers.openlibrary.org/b/id/11048623-L.jpg',
+        lido: false,
+        criadoEm: 1700000006000
+    },
+    {
+        id: 'book-8',
+        titulo: 'O Príncipe',
+        autor: 'Nicolau Maquiavel',
+        capa: 'https://covers.openlibrary.org/b/id/15142439-L.jpg',
+        lido: false,
+        criadoEm: 1700000007000
+    },
+    {
+        id: 'book-9',
+        titulo: 'A Lei',
+        autor: 'Frédéric Bastiat',
+        capa: 'https://covers.openlibrary.org/b/id/8819903-L.jpg',
+        lido: false,
+        criadoEm: 1700000008000
+    },
+    {
+        id: 'book-10',
+        titulo: 'Manual de Persuasão do FBI',
+        autor: 'Jack Schafer e Marvin Karlins',
+        capa: 'https://covers.openlibrary.org/b/id/10299599-L.jpg',
+        lido: false,
+        criadoEm: 1700000009000
+    },
+    {
+        id: 'book-11',
+        titulo: 'A Psicologia Financeira',
+        autor: 'Morgan Housel',
+        capa: 'https://covers.openlibrary.org/b/id/10389354-L.jpg',
+        lido: false,
+        criadoEm: 1700000010000
+    },
+    {
+        id: 'book-12',
+        titulo: 'Como Fazer Amigos e Influenciar Pessoas',
+        autor: 'Dale Carnegie',
+        capa: 'https://covers.openlibrary.org/b/id/13314878-L.jpg',
+        lido: false,
+        criadoEm: 1700000011000
+    },
+    {
+        id: 'book-13',
+        titulo: 'Noites Brancas',
+        autor: 'Fiódor Dostoiévski',
+        capa: 'https://covers.openlibrary.org/b/id/3293338-L.jpg',
+        lido: false,
+        criadoEm: 1700000012000
+    },
+    {
+        id: 'book-14',
+        titulo: 'Cartas de um Diabo a seu Aprendiz',
+        autor: 'C. S. Lewis',
+        capa: 'https://covers.openlibrary.org/b/id/9779-L.jpg',
+        lido: false,
+        criadoEm: 1700000013000
+    },
+    {
+        id: 'book-15',
+        titulo: 'Crime e Castigo',
+        autor: 'Fiódor Dostoiévski',
+        capa: 'https://covers.openlibrary.org/b/id/9411873-L.jpg',
+        lido: false,
+        criadoEm: 1700000014000
+    },
+    {
+        id: 'book-16',
+        titulo: 'Rápido e Devagar: Duas Formas de Pensar',
+        autor: 'Daniel Kahneman',
+        capa: 'https://covers.openlibrary.org/b/id/13290711-L.jpg',
+        lido: false,
+        criadoEm: 1700000015000
+    },
+    {
+        id: 'book-17',
+        titulo: 'O Homem Mais Rico da Babilônia',
+        autor: 'George S. Clason',
+        capa: 'https://covers.openlibrary.org/b/id/10491331-L.jpg',
+        lido: false,
+        criadoEm: 1700000016000
+    },
+    {
+        id: 'book-18',
+        titulo: 'Em Busca de Sentido',
+        autor: 'Viktor E. Frankl',
+        capa: 'https://covers.openlibrary.org/b/id/8516506-L.jpg',
+        lido: false,
+        criadoEm: 1700000017000
+    },
+    {
+        id: 'book-19',
+        titulo: 'Nação Dopamina',
+        autor: 'Anna Lembke',
+        capa: 'https://covers.openlibrary.org/b/id/11757830-L.jpg',
+        lido: false,
+        criadoEm: 1700000018000
+    },
+    {
+        id: 'book-20',
+        titulo: 'A Startup Enxuta',
+        autor: 'Eric Ries',
+        capa: 'https://covers.openlibrary.org/b/id/7104760-L.jpg',
+        lido: false,
+        criadoEm: 1700000019000
+    },
+    {
+        id: 'book-21',
+        titulo: 'O Existencialismo é um Humanismo',
+        autor: 'Jean-Paul Sartre',
+        capa: 'https://covers.openlibrary.org/b/id/2355635-L.jpg',
+        lido: false,
+        criadoEm: 1700000020000
+    },
+    {
+        id: 'book-22',
+        titulo: 'A Arte da Guerra',
+        autor: 'Sun Tzu',
+        capa: 'https://covers.openlibrary.org/b/id/4849549-L.jpg',
+        lido: false,
+        criadoEm: 1700000021000
+    },
+    {
+        id: 'book-23',
+        titulo: 'A Lição Final',
+        autor: 'Randy Pausch',
+        capa: 'https://covers.openlibrary.org/b/id/6423395-L.jpg',
+        lido: false,
+        criadoEm: 1700000022000
+    },
+    {
+        id: 'book-24',
+        titulo: 'Antifrágil: Coisas que se Beneficiam com o Caos',
+        autor: 'Nassim Nicholas Taleb',
+        capa: 'https://covers.openlibrary.org/b/id/9180157-L.jpg',
+        lido: false,
+        criadoEm: 1700000023000
+    },
+    {
+        id: 'book-25',
+        titulo: 'Como Estudar e Como Aprender',
+        autor: 'Emilio Mira y López',
+        capa: 'https://static.cedet.com.br/produtos_imagem_principal_large/13490-525x791.jpg',
+        lido: false,
+        criadoEm: 1700000024000
+    },
+    {
+        id: 'book-26',
+        titulo: 'O Clube das 5 da Manhã',
+        autor: 'Robin Sharma',
+        capa: 'https://covers.openlibrary.org/b/id/10326643-L.jpg',
+        lido: false,
+        criadoEm: 1700000025000
+    },
+    {
+        id: 'book-27',
+        titulo: 'Nunca Deixe de Tentar',
+        autor: 'Michael Jordan',
+        capa: 'https://covers.openlibrary.org/b/id/48582-L.jpg',
+        lido: false,
+        criadoEm: 1700000026000
+    },
+    {
+        id: 'book-28',
+        titulo: 'De Quanta Terra Precisa um Homem?',
+        autor: 'Liev Tolstói',
+        capa: 'https://covers.openlibrary.org/b/id/104052-L.jpg',
+        lido: false,
+        criadoEm: 1700000027000
+    },
+    {
+        id: 'book-29',
+        titulo: 'Dopamina: A Molécula do Desejo',
+        autor: 'Daniel Z. Lieberman e Michael E. Long',
+        capa: 'https://covers.openlibrary.org/b/id/10648753-L.jpg',
+        lido: false,
+        criadoEm: 1700000028000
+    },
+    {
+        id: 'book-30',
+        titulo: 'O Conde de Monte Cristo',
+        autor: 'Alexandre Dumas',
+        capa: 'https://covers.openlibrary.org/b/id/14566393-L.jpg',
+        lido: false,
+        criadoEm: 1700000029000
     }
 ];
 
@@ -75,6 +275,17 @@ const state = {
 // --------------------------------------------------------------------------
 // 3. Utilitários & Helpers
 // --------------------------------------------------------------------------
+
+/**
+ * Normaliza textos removendo acentuação e pontuação para busca e comparação seguras.
+ */
+function normalizarTexto(texto) {
+    return String(texto || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]/g, '');
+}
 
 /**
  * Gera um ID estável e único para novos itens.
@@ -140,24 +351,48 @@ function showToast(mensagem, tipo = 'info', duracao = 3500) {
 
 function carregarLivrosDoStorage() {
     try {
-        // Tenta buscar da chave v2 ou migra da chave legada 'minhaBiblioteca'
+        // Tenta buscar da chave v3 ou migra da v2/legada 'minhaBiblioteca'
         let dados = localStorage.getItem(STORAGE_KEY_BOOKS);
         if (!dados) {
-            dados = localStorage.getItem('minhaBiblioteca');
+            dados = localStorage.getItem('minhaBiblioteca_v2') || localStorage.getItem('minhaBiblioteca');
         }
 
         if (dados) {
             const parsed = JSON.parse(dados);
             if (Array.isArray(parsed) && parsed.length > 0) {
-                // Garante que todo livro tenha um ID único e estrutura consistente
-                return parsed.map((item, index) => ({
+                const livrosCarregados = parsed.map((item, index) => ({
                     id: item.id || `legacy-${index}-${Date.now()}`,
                     titulo: String(item.titulo || '').trim(),
                     autor: String(item.autor || '').trim(),
                     capa: item.capa || '',
                     lido: Boolean(item.lido),
-                    criadoEm: item.criadoEm || Date.now()
+                    criadoEm: item.criadoEm || (Date.now() + index)
                 }));
+
+                // Garante que novos livros da lista padrão sejam incorporados sem duplicações
+                let novosAdicionados = false;
+                LIVROS_PADRAO.forEach(padrao => {
+                    const normPadrao = normalizarTexto(padrao.titulo);
+                    const jaExiste = livrosCarregados.some(existente => {
+                        const normExistente = normalizarTexto(existente.titulo);
+                        return normExistente === normPadrao ||
+                               (normExistente.length > 4 && normPadrao.length > 4 && 
+                                (normExistente.includes(normPadrao) || normPadrao.includes(normExistente)));
+                    });
+
+                    if (!jaExiste) {
+                        livrosCarregados.push({ ...padrao });
+                        novosAdicionados = true;
+                    }
+                });
+
+                if (novosAdicionados || !localStorage.getItem(STORAGE_KEY_BOOKS)) {
+                    try {
+                        localStorage.setItem(STORAGE_KEY_BOOKS, JSON.stringify(livrosCarregados));
+                    } catch (_) {}
+                }
+
+                return livrosCarregados;
             }
         }
     } catch (erro) {
@@ -445,6 +680,14 @@ function adicionarNovoLivro(evento) {
 
     if (temErro) {
         showToast('Preencha os campos obrigatórios corretamente.', 'error');
+        return;
+    }
+
+    // Validação contra duplicação de livros
+    const normNovo = normalizarTexto(titulo);
+    const jaExiste = state.livros.some(l => normalizarTexto(l.titulo) === normNovo);
+    if (jaExiste) {
+        showToast(`O livro "${titulo}" já está na sua estante!`, 'info');
         return;
     }
 
